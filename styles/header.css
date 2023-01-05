@@ -124,7 +124,7 @@ header {
     padding: 20px 30px;
     transform: translateX(100%);
     transition: 0.5s;
-    z-index: 2;
+    z-index: 10000;
   }
 
   .nav-active::after {
