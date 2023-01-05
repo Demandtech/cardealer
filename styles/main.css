@@ -35,6 +35,8 @@
   color: #242424;
   margin-bottom: 30px;
   line-height: 1.5;
+  background-color: hsl(100, 100%, 100%);
+  padding: 10px 0;
 }
 
 .hero-left button {
@@ -42,8 +44,13 @@
   font-size: 20px;
   font-weight: 700;
   padding: 15px 25px;
-  color:  #0096c7;
+
   cursor: pointer;
+}
+
+.hero-left button a {
+  color: #0096c7;
+  text-decoration: none;
 }
 
 .hero-cover {
@@ -119,7 +126,6 @@
   padding: 50px 0 150px 0;
 }
 
-
 .get-intouch-header {
   margin-bottom: 50px;
 }
@@ -148,7 +154,7 @@
 }
 
 .touch-card:nth-child(2) {
-  background:  #0096c7;
+  background: #0096c7;
 }
 
 .touch-card:nth-child(3) {
@@ -189,7 +195,8 @@
   z-index: 1000;
 }
 
-.insta p, .phone p {
+.insta p,
+.phone p {
   letter-spacing: 1px;
 }
 
@@ -224,5 +231,10 @@
 
   .get-intouch-wrapper {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .hero-left p {
+    background-color: hsl(100, 100%, 100%);
+    padding: 10px 0;
   }
 }
