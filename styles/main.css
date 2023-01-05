@@ -1,0 +1,229 @@
+.hero {
+  height: calc(100vh - 85px);
+  background: url(../images/bg-hero.png) no-repeat center #242424;
+  background-size: cover;
+  position: relative;
+}
+
+.hero .container {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  height: 100%;
+}
+
+.hero-left,
+.hero-right {
+  width: 50%;
+}
+
+.hero-right img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.hero-left h1 {
+  font-size: 100px;
+  color: #242424;
+  margin-bottom: 10px;
+}
+
+.hero-left p {
+  font-size: 20px;
+  color: #242424;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.hero-left button {
+  background: #242424;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 15px 25px;
+  color: #ec2633;
+  cursor: pointer;
+}
+
+.hero-cover {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: #24242426;
+  animation: rollDown 2s;
+}
+
+@keyframes rollDown {
+  0% {
+    height: 100%;
+  }
+
+  100% {
+    height: 0;
+  }
+}
+
+.services {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.services h2,
+.get-intouch h2 {
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+
+.services h2 span,
+.get-intouch h2 span {
+  color: orange;
+}
+
+.services-wrapper {
+  display: flex;
+  gap: 40px;
+}
+
+.service-card {
+  flex: 1;
+  position: relative;
+  height: 250px;
+}
+
+.service-card h5 {
+  font-size: 20px;
+  padding: 10px;
+  position: absolute;
+  transform: translate(50%);
+  top: 50%;
+  right: 50%;
+  word-wrap: none;
+  z-index: 1;
+}
+
+.service-card img {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  opacity: 0.6;
+}
+
+.get-intouch {
+  text-align: center;
+  padding: 50px 0 150px 0;
+}
+
+
+.get-intouch-header {
+  margin-bottom: 50px;
+}
+
+.get-intouch-header p {
+  font-size: 18px;
+  font-weight: 700;
+  color: #bfbfbf;
+}
+
+.get-intouch-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.touch-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+}
+
+.touch-card:nth-child(1) {
+  background-color: #bfbfbf;
+}
+
+.touch-card:nth-child(2) {
+  background: #ec2633;
+}
+
+.touch-card:nth-child(3) {
+  background: url(../images/instagram-bg.webp) no-repeat center;
+  background-size: cover;
+  position: relative;
+}
+
+.touch-card:nth-child(3)::before {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #000000b3;
+}
+
+.touch-card img {
+  text-align: center;
+  object-fit: cover;
+  width: 100px;
+  margin-bottom: 20px;
+  z-index: 1000;
+}
+
+.touch-card i {
+  font-size: 18px;
+}
+
+.touch-card p {
+  font-size: 20px;
+  font-weight: 600;
+  z-index: 1000;
+  color: hsl(100, 100%, 100%);
+}
+
+.insta {
+  z-index: 1000;
+}
+
+.insta p, .phone p {
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 835px) {
+  .hero {
+    min-height: calc(100vh - 85px);
+    padding: 100px 0;
+  }
+  .hero .container {
+    flex-direction: column-reverse;
+    padding-bottom: 20px;
+  }
+
+  .hero-left,
+  .hero-right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-left h1 {
+    font-size: 50px;
+  }
+
+  .hero-left p {
+    font-weight: 700;
+    text-shadow: 1px 1px 2px #ffffff;
+  }
+
+  .services-wrapper {
+    flex-direction: column;
+  }
+
+  .get-intouch-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .touch-card {
+  }
+}

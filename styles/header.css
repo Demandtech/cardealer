@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;700&display=swap');
+
+body {
+  font-family: 'League Spartan';
+  font-size: 16px;
+  width: 100%;
+}
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  border: none;
+}
+
+.menu-close,
+.menu-open {
+  display: none;
+}
+
+header {
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 100px;
+}
+
+.navbar {
+  padding: 20px 0;
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  width: 100px;
+  object-fit: contain;
+}
+
+.nav-list {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  position: relative;
+  display: block;
+  color: #242424;
+  transition: 0.5s;
+}
+
+.nav-link:hover {
+  color: #24242476;
+}
+
+.nav-active {
+  position: relative;
+  display: block;
+}
+
+.nav-active::after {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 100%;
+  margin-top: 10px;
+  height: 5px;
+  background: #ec2633;
+}
+
+.phone-number {
+  background-color: #242424;
+  color: #ec2633;
+  font-weight: 600;
+
+  padding: 15px 20px;
+}
+
+@media screen and (max-width: 835px) {
+  .menu-close,
+  .menu-open {
+    display: block;
+    font-size: 30px;
+    background: transparent;
+  }
+
+  .menu-close {
+    border: 1px solid hsl(100, 100%, 100%);
+    padding: 0 10px;
+  }
+
+  .container {
+    padding: 0 50px;
+  }
+
+  .navbar .container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    align-items: flex-end;
+    width: 50%;
+    background-color: rgba(255, 0, 0, 0.525);
+    height: 100vh;
+    padding: 20px 30px;
+    transform: translateX(100%);
+    transition: 0.5s;
+    z-index: 2;
+  }
+
+  .nav-active::after {
+    background: hsl(100, 100%, 0%);
+  }
+
+  .nav-open {
+    transform: translate(0);
+  }
+
+  .nav-link {
+    color: hsl(100, 100%, 100%);
+  }
+
+  .logo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  .container {
+    padding: 0 30px;
+  }
+
+  .logo img {
+    object-fit: contain;
+  }
+}
