@@ -32,7 +32,7 @@
 .contact-header h2 {
   display: inline-block;
   position: relative;
-  color: #e4405f;
+  color:  #0096c7;
   font-size: 45px;
 }
 
@@ -105,7 +105,7 @@
 }
 
 .instagram-icon {
-  color: #e4405f;
+  color:  #0096c7;
   font-size: 25px;
   cursor: pointer;
 }

@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;700&display=swap');
 
+html{
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'League Spartan';
   font-size: 16px;
   width: 100%;
+  position: relative;
 }
 
 *,
@@ -20,9 +25,6 @@ button {
 .menu-close,
 .menu-open {
   display: none;
-}
-
-header {
 }
 
 .container {
@@ -51,6 +53,8 @@ header {
   list-style-type: none;
   align-items: center;
   gap: 20px;
+
+  overflow-x: hidden;
 }
 
 .nav-link {
@@ -64,7 +68,7 @@ header {
 }
 
 .nav-link:hover {
-  color: #24242476;
+   color: #24242476;
 }
 
 .nav-active {
@@ -74,23 +78,25 @@ header {
 
 .nav-active::after {
   display: block;
-  content: '';
+  content: '0 ';
   position: absolute;
   width: 100%;
-  margin-top: 10px;
   height: 5px;
-  background: #ec2633;
+  background-color:  red;
 }
 
 .phone-number {
   background-color: #242424;
-  color: #ec2633;
+  color:  #0096c7;;
   font-weight: 600;
 
   padding: 15px 20px;
 }
 
 @media screen and (max-width: 835px) {
+  body {
+    overflow-x: hidden;
+  }
   .menu-close,
   .menu-open {
     display: block;
@@ -119,10 +125,11 @@ header {
     right: 0;
     align-items: flex-end;
     width: 50%;
-    background-color: rgba(255, 0, 0, 0.525);
+    background-color:  #0095c780;;
     height: 100vh;
     padding: 20px 30px;
     transform: translateX(100%);
+    overflow-x: hidden;
     transition: 0.5s;
     z-index: 10000;
   }
@@ -133,6 +140,7 @@ header {
 
   .nav-open {
     transform: translate(0);
+    overflow-x: hidden;
   }
 
   .nav-link {

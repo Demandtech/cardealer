@@ -4,7 +4,7 @@
   background: url(../images/premium.png) no-repeat top;
   background-size: cover;
   background-attachment: fixed;
-  padding-top: 50px;
+  padding-top: 100px;
 }
 
 .premium-header {
@@ -65,7 +65,7 @@
 }
 
 .premium-card-header h2 {
-  background: red;
+  background: #0096c7;
   padding: 10px 0;
   display: block;
   font-size: 20px;
@@ -74,7 +74,7 @@
 }
 
 .premium-card-header h3 {
-  color: red;
+  color:  #0096c7;
 }
 
 .premium-card-header p strong {
@@ -89,21 +89,14 @@
   line-height: 1.5;
   font-size: 18px;
 }
-.premium-card:nth-child(1) {
-}
-
-.premium-card:nth-child(2) {
-  /* box-shadow: 0 1px 4px rgba(0,0,0,.6); */
-}
-
-.premium-card:nth-child(3) {
-}
 
 @media screen and (max-width: 835px) {
   .premium-wrapper {
     flex-direction: column;
   }
 
-  .premium-card:nth-child(2) {
+
+  .premium-card ul li{
+   line-height: 2;
   }
 }
