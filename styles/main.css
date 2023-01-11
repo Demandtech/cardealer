@@ -35,8 +35,8 @@
   color: #242424;
   margin-bottom: 30px;
   line-height: 1.5;
-  background-color: hsl(100, 100%, 100%);
   padding: 10px 0;
+  font-weight: 500;
 }
 
 .hero-left button {
@@ -49,7 +49,7 @@
 }
 
 .hero-left button a {
-  color: #0096c7;
+  color: #3294ff;;
   text-decoration: none;
 }
 
@@ -81,7 +81,7 @@
 .services h2,
 .get-intouch h2 {
   font-size: 45px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .services h2 span,
@@ -221,7 +221,7 @@
   }
 
   .hero-left p {
-    font-weight: 700;
+    font-weight: 600;
     text-shadow: 1px 1px 2px #ffffff;
   }
 

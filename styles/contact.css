@@ -26,13 +26,13 @@
   width: 100%;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 10000;
+  z-index: 900;
 }
 
 .contact-header h2 {
   display: inline-block;
   position: relative;
-  color:  #0096c7;
+  color:  #3294ff;
   font-size: 45px;
 }
 
@@ -180,7 +180,7 @@
   .contact-header h2 {
     display: inline-block;
     position: relative;
-    color: #e4405f;
+    color:  #3294ff;
     font-size: 35px;
     padding-top: 0px;
   }

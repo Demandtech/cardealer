@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;700&display=swap');
 
-html{
+html {
   overflow-x: hidden;
 }
 
@@ -16,6 +16,18 @@ body {
 ::after {
   padding: 0;
   margin: 0;
+}
+
+header{
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+}
+
+main{
+  padding-top: 115px;
 }
 
 button {
@@ -43,9 +55,15 @@ button {
   justify-content: space-between;
 }
 
+
+.logo-wrapper {
+  width: 120px;
+}
+
 .logo img {
-  width: 100px;
+  width: 100%;
   object-fit: contain;
+  object-position: center;
 }
 
 .nav-list {
@@ -68,7 +86,7 @@ button {
 }
 
 .nav-link:hover {
-   color: #24242476;
+  color: #24242476;
 }
 
 .nav-active {
@@ -86,14 +104,14 @@ button {
 } */
 
 .nav-active {
-  background-color: #0096c7;
+  background-color: #3294ff;
   padding: 5px 10px;
   color: hsl(100, 100%, 100%);
 }
 
 .phone-number {
   background-color: #242424;
-  color:  #0096c7;;
+  color: #3294ff;
   font-weight: 600;
 
   padding: 15px 20px;
@@ -103,6 +121,8 @@ button {
   body {
     overflow-x: hidden;
   }
+
+  
   .menu-close,
   .menu-open {
     display: block;
@@ -119,6 +139,8 @@ button {
     padding: 0 50px;
   }
 
+  
+
   .navbar .container {
     flex-direction: column;
     align-items: stretch;
@@ -131,7 +153,7 @@ button {
     right: 0;
     align-items: flex-end;
     width: 50%;
-    background-color:  #0095c780;;
+    background-color: #3295ff67;
     height: 100vh;
     padding: 20px 30px;
     transform: translateX(100%);
@@ -153,17 +175,24 @@ button {
     color: hsl(100, 100%, 100%);
   }
 
+  .logo-wrapper {
+    width: 80px;
+  }
+
   .logo {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
+    position: relative;
   }
+
 }
 
 @media screen and (max-width: 435px) {
   .container {
     padding: 0 30px;
   }
+
 
   .logo img {
     object-fit: contain;
