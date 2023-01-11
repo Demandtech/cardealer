@@ -121,6 +121,98 @@
   animation-iteration-count: 1;
 }
 
+.get-intouch {
+  text-align: center;
+  padding: 50px 0 150px 0;
+}
+
+
+.get-intouch h2 {
+  font-size: 45px;
+  margin-bottom: 40px;
+}
+
+
+.get-intouch h2 span {
+  color: orange;
+}
+
+.get-intouch-header {
+  margin-bottom: 50px;
+}
+
+.get-intouch-header p {
+  font-size: 18px;
+  font-weight: 700;
+  color: #bfbfbf;
+}
+
+.get-intouch-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.touch-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+}
+
+.touch-card:nth-child(1) {
+  background-color: #bfbfbf;
+}
+
+.touch-card:nth-child(2) {
+  background: #0096c7;
+}
+
+.touch-card:nth-child(3) {
+  background: url(../images/instagram-bg.webp) no-repeat center;
+  background-size: cover;
+  position: relative;
+}
+
+.touch-card:nth-child(3)::before {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #000000b3;
+}
+
+.touch-card img {
+  text-align: center;
+  object-fit: cover;
+  width: 100px;
+  margin-bottom: 20px;
+  z-index: 1000;
+}
+
+.touch-card i {
+  font-size: 18px;
+}
+
+.touch-card p {
+  font-size: 20px;
+  font-weight: 600;
+  z-index: 1000;
+  color: hsl(100, 100%, 100%);
+}
+
+.insta {
+  z-index: 1000;
+}
+
+.insta p,
+.phone p {
+  letter-spacing: 1px;
+}
+
+
+
 @keyframes shake {
   0% {
     transform: translate(1px, 1px) rotate(0deg);
@@ -191,5 +283,8 @@
     font-size: 18px;
     line-height: 1.4;
     
+  }
+  .get-intouch-wrapper {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
