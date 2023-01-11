@@ -26,8 +26,19 @@
 .hero-left h1 {
   font-size: 90px;
   color: #242424;
-  margin-bottom: 10px;
+
   line-height: 1.3;
+}
+
+.img-wrapper {
+  margin-bottom: 10px;
+  width: 500px;
+}
+
+.img-wrapper img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .hero-left p {
@@ -49,7 +60,7 @@
 }
 
 .hero-left button a {
-  color: #3294ff;;
+  color: #3294ff;
   text-decoration: none;
 }
 
@@ -63,27 +74,27 @@
   animation: rollDown 2s;
 }
 
-.images-gallery{
+.images-gallery {
   padding: 50px 0;
 }
 
-.images-grid{
+.images-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px ;
+  gap: 10px;
 }
 
-.item{
+.item {
   display: flex;
   background: #24242426;
 }
 
-.item img{
+.item img {
   width: 50%;
-  transition: .3s;
+  transition: 0.3s;
 }
 
-.item img:hover{
+.item img:hover {
   transform: scale(1.1);
   filter: grayscale(1);
 }
@@ -103,12 +114,12 @@
   padding: 50px 0;
 }
 
-.services h2{
+.services h2 {
   font-size: 45px;
   margin-bottom: 40px;
 }
 
-.services h2 span{
+.services h2 span {
   color: orange;
 }
 
@@ -144,8 +155,6 @@
   opacity: 0.6;
 }
 
-
-
 @media screen and (max-width: 835px) {
   .hero {
     min-height: calc(100vh - 85px);
@@ -175,19 +184,22 @@
     flex-direction: column;
   }
 
-  
-
   .hero-left p {
     background-color: hsl(100, 100%, 100%);
     padding: 10px 0;
   }
 
-.images-grid {
-  grid-template-columns: 1fr;
+  .images-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .img-wrapper {
+  margin-bottom: 10px;
+  width: 300px;
 }
 }
 
-.section{
+.section {
   opacity: 0;
   transform: translateY(100px);
   transition: all 1s;
