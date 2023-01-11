@@ -46,8 +46,9 @@
 .service-card {
   border-radius: 8px;
   padding: 30px 20px;
-  background: url(../images/premium.png) #f8f8f8 no-repeat bottom right;
-  background-size: 200px;
+  background:url(../images//pat-2.png) #ffffff no-repeat bottom right;
+  background:url(../images//pat-2.png) #ffffff no-repeat top left;
+  background-size: 100px;
 }
 
 .service-card-header {
