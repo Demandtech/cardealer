@@ -39,3 +39,6 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElement = document.querySelectorAll('section')
 hiddenElement.forEach((el) => observer.observe(el))
+
+
+console.log('start Go');

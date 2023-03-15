@@ -5,6 +5,7 @@
   background-size: cover;
   background-attachment: fixed;
   padding-top: 100px;
+  opacity: 0;
 }
 
 .services-header {
